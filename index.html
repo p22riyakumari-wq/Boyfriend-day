@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Favorite Person</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:Georgia,"Times New Roman",serif;
+  background:#fff7f8;color:#4b3037;overflow-x:hidden
+}
+button{font:inherit;cursor:pointer}
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:30px;position:relative;
+  background:radial-gradient(circle at top,#ffe9ee 0,#fff7f8 48%,#f8e8ec 100%);
+}
+.card{max-width:700px;position:relative;z-index:2}
+.kicker{letter-spacing:4px;text-transform:uppercase;font-size:12px;color:#a56b78}
+h1{font-size:clamp(45px,9vw,82px);margin:18px 0 12px;line-height:.95}
+.subtitle{font-size:19px;line-height:1.7;max-width:560px;margin:0 auto 28px}
+.btn{
+  border:0;border-radius:999px;padding:14px 28px;background:#8f5263;color:white;
+  box-shadow:0 10px 25px #8f526333;transition:.25s
+}
+.btn:hover{transform:translateY(-3px);background:#764151}
+.heart{position:absolute;font-size:25px;animation:float 7s infinite ease-in-out;opacity:.5}
+.h1{left:10%;top:18%}.h2{right:12%;top:30%;animation-delay:2s}.h3{left:18%;bottom:18%;animation-delay:4s}.h4{right:20%;bottom:12%;animation-delay:1s}
+@keyframes float{50%{transform:translateY(-25px) rotate(8deg);opacity:.85}}
+section{padding:90px 22px}
+.wrap{max-width:1000px;margin:auto}
+.section-title{text-align:center;font-size:38px;margin:0 0 12px}
+.section-intro{text-align:center;max-width:650px;margin:0 auto 42px;line-height:1.7}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.photo{
+  aspect-ratio:4/5;border-radius:22px;background:#ead5da;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  padding:20px;color:#875762;border:2px dashed #cdaab3;
+}
+.photo span{font-size:14px;line-height:1.5}
+.timeline{display:grid;gap:18px;max-width:720px;margin:auto}
+.story{
+  background:white;border-radius:20px;padding:25px;
+  box-shadow:0 10px 30px #7d43500f;border:1px solid #f0dce1
+}
+.story strong{display:block;color:#9a5c6c;margin-bottom:7px}
+.reasons{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.reason{
+  background:white;padding:25px;border-radius:20px;border:1px solid #f0dce1;
+  box-shadow:0 10px 30px #7d43500d
+}
+.letter{
+  background:#fff;border-radius:28px;padding:38px;max-width:750px;margin:auto;
+  box-shadow:0 15px 45px #7d435014;border:1px solid #f0dce1;
+  font-size:18px;line-height:1.9
+}
+.surprise{text-align:center;background:#f5e3e8}
+.hidden{display:none}
+.reveal{
+  max-width:650px;margin:30px auto 0;background:white;border-radius:25px;padding:30px;
+  line-height:1.8;box-shadow:0 15px 40px #7d435014
+}
+footer{text-align:center;padding:45px 20px;background:#3f2930;color:#fff0f3}
+.small{font-size:13px;opacity:.8}
+@media(max-width:700px){
+  .photos{grid-template-columns:1fr}
+  .reasons{grid-template-columns:1fr}
+  section{padding:70px 18px}
+  .letter{padding:25px}
+}
+</style>
+</head>
+<body>
+
+<section class="hero" id="home">
+  <div class="heart h1">♡</div><div class="heart h2">♡</div>
+  <div class="heart h3">♡</div><div class="heart h4">♡</div>
+  <div class="card">
+    <div class="kicker">A little website made just for you</div>
+    <h1>For My Favorite Person</h1>
+    <p class="subtitle">I wanted to give you something a little different this year… so I made you a tiny corner of the internet.</p>
+    <button class="btn" onclick="document.getElementById('memories').scrollIntoView()">Open my surprise</button>
+  </div>
+</section>
+
+<section id="memories">
+  <div class="wrap">
+    <h2 class="section-title">Our Little Memories</h2>
+    <p class="section-intro">Replace these boxes with your favorite pictures. Add your own captions underneath each one.</p>
+    <div class="photos">
+      <div class="photo"><span>YOUR PHOTO 1<br><br>Replace this box with a favorite photo.</span></div>
+      <div class="photo"><span>YOUR PHOTO 2<br><br>Replace this box with a favorite photo.</span></div>
+      <div class="photo"><span>YOUR PHOTO 3<br><br>Replace this box with a favorite photo.</span></div>
+      <div class="photo"><span>YOUR PHOTO 4<br><br>Replace this box with a favorite photo.</span></div>
+      <div class="photo"><span>YOUR PHOTO 5<br><br>Replace this box with a favorite photo.</span></div>
+      <div class="photo"><span>YOUR PHOTO 6<br><br>Replace this box with a favorite photo.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Our Story</h2>
+    <p class="section-intro">Change these dates and words to your own story.</p>
+    <div class="timeline">
+      <div class="story"><strong>THE DAY WE MET</strong>Write how you first met or first started talking.</div>
+      <div class="story"><strong>OUR FIRST SPECIAL MEMORY</strong>Write about a moment you will always remember.</div>
+      <div class="story"><strong>THE MOMENT I REALIZED...</strong>Write something sweet, funny, or personal.</div>
+      <div class="story"><strong>TODAY</strong>And here we are, still making memories together.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Things I Love About You</h2>
+    <p class="section-intro">Add your own reasons. They can be serious, silly, or completely random.</p>
+    <div class="reasons">
+      <div class="reason">01 — Your smile</div>
+      <div class="reason">02 — The way you make me laugh</div>
+      <div class="reason">03 — The little things you do</div>
+      <div class="reason">04 — The way you understand me</div>
+      <div class="reason">05 — Your hugs</div>
+      <div class="reason">06 — Simply being you</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">A Letter For You</h2>
+    <div class="letter">
+      Dear <b>[BOYFRIEND'S NAME]</b>,<br><br>
+      I don't always know how to put everything I feel into words, so I made this little website instead.
+      Thank you for being part of my life, for the memories we have made, and for all the little moments
+      that mean more to me than you probably realize.<br><br>
+      I hope we keep making our own silly, beautiful, unforgettable memories together.
+      <br><br>
+      Happy Boyfriend Day.<br><br>
+      Love,<br>
+      <b>[YOUR NAME]</b>
+    </div>
+  </div>
+</section>
+
+<section class="surprise">
+  <div class="wrap">
+    <h2 class="section-title">One Last Thing...</h2>
+    <p class="section-intro">Don't click the button unless you're ready.</p>
+    <button class="btn" onclick="reveal()">Click for your final surprise</button>
+    <div id="secret" class="reveal hidden">
+      <h3>My favorite place is wherever I am with you.</h3>
+      <p>Now replace this message with your own secret message, inside joke, promise, or anything only the two of you understand.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Made with love, just for you.
+  <div class="small">Customize everything you want — this is your little love story.</div>
+</footer>
+
+<script>
+function reveal(){
+  const s=document.getElementById("secret");
+  s.classList.remove("hidden");
+  s.scrollIntoView({behavior:"smooth",block:"center"});
+}
+</script>
+</body>
+</html>
